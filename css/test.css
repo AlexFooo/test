@@ -1,0 +1,90 @@
+form#movie-filter {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.price-filter, .data-filter {
+    display: flex;
+    flex-direction: column;
+}
+body:not(.elementor-page):not(.panel-layout) .entry-content h2{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.content-area .post-wrap{
+    padding-right: 0px;
+}
+.genres-filter, .countres-filter, .actors-filter {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    gap: 10px;
+}
+.genres-filter h4, .countres-filter h4, .actors-filter h4{
+    width: 100%;
+}
+.movie{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 20px 0;
+    gap: 20px;
+}
+.movie img{
+    
+    max-width: 220px;
+    height: 100%;
+    min-height: 330px;
+    max-height: 330px;
+    object-fit: cover;
+    
+}
+.movie-left {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.movie a{
+    color: white;
+    background-color: var(--sydney-global-color-1);
+    border: 1px solid var(--sydney-global-color-1);
+    padding: 10px 20px;
+    width: fit-content;
+}
+.movie a:hover{
+    background-color: white;
+    color: var(--sydney-global-color-1);
+    border: 1px solid var(--sydney-global-color-1);
+}
+
+.sort-buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+}
+.sort-buttons-price, .sort-buttons-date{
+    display: flex;
+    justify-content: flex-end;
+}
+.sort-buttons svg {
+    fill: var(--sydney-global-color-1);
+    transition: .3s;
+}
+
+.sort-buttons a:hover svg{
+    fill: black;
+    transition: .3s;
+}
+.sort-buttons a{
+    display: flex;
+}
+
+input[type="checkbox"]{
+    margin-top: 0px;
+}
+label {
+    display: flex;
+    align-items: center;
+    gap:5px;
+}
